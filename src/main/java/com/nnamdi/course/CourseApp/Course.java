@@ -1,37 +1,46 @@
 package com.nnamdi.course.CourseApp;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
-private String courseId;
-private String courseName;
-private String authorName;
 
-    public Course(String courseId, String courseName, String authorName) {
-        this.courseId = courseId;
-        this.courseName = courseName;
-        this.authorName = authorName;
+    @Id
+    private String courseid;
+    private String coursename;
+    private String author;
+
+    public Course() {
     }
 
-    public String getCourseId() {
-        return courseId;
+    public String getCourseid() {
+        return courseid;
     }
 
-    public void setCourseId(String courseId) {
-        this.courseId = courseId;
+    public void setCourseid(String courseid) {
+        this.courseid = courseid;
     }
 
-    public String getCourseName() {
-        return courseName;
+    public String getCoursename() {
+        return coursename;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
+    public void setCoursename(String coursename) {
+        this.coursename = coursename;
     }
 
-    public String getAuthorName() {
-        return authorName;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAuthorName(String authorName) {
-        this.authorName = authorName;
+    public void setAuthor(String author) {
+        this.author = author;
     }
+
+
+
+
+
 }
